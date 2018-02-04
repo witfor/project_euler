@@ -1,4 +1,3 @@
-
 if __name__ == "__main__":
     # Initial Fibonacci values
     a = 1
