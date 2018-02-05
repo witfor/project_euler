@@ -1,5 +1,5 @@
 def largest_palindrome(num_digits):
-    '''Returns the largest palindorm mad from a product of two num_digits numbers.'''
+    '''Returns the largest palindrome made from a product of two num_digits numbers.'''
 
     start = int('9'*num_digits)
     largest_now = 0
