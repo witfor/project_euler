@@ -18,7 +18,7 @@ def smallest_num_even_divisible(a, b):
 
     #Factor numbers a through b, tabulate min factors needed in dict min_factors
     min_factors = {}
-    for x in range(a, b+1):
+    for x in range(a, b + 1):
         list = prime_factors(x)
         xdict = dict((x, list.count(x)) for x in set(list))
         for key in xdict.keys():
