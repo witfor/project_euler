@@ -7,7 +7,7 @@ def largest_palindrome(num_digits):
     j = start
 
     for i in range (start, start//10, -1):
-        for j in range (start, start//10, -1):
+        for j in range (start, i, -1):
             if i * j < largest_now:
                 # break: all other candidates will be smaller than largest_now
                 break
