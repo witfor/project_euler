@@ -8,7 +8,7 @@ def special_pythag_triplet(num):
 
     a = 1
     for b in range(1, num):
-        if a**2 + b**2 == (num - a - b) * 2:
+        if a**2 + b**2 == (num - a - b) ** 2:
             return a * b * (num - a - b)
         for a in range(1, b):
             if a**2 + b**2 == (num - a - b)**2:
