@@ -6,9 +6,10 @@ def lattice_paths(n, m):
     n: number of rows
     m: number of columns
 
-    Outputs
+    Output
     ----------
-    Number of paths from top left corner to bottom right corner in n * m grid.
+    Number of paths from top left corner to bottom right corner along
+    edges in n * m grid.
 
     Example
     ----------
