@@ -13,7 +13,7 @@ def lattice_paths(n, m):
 
     Example
     ----------
-    > lattice_paths(2, 2)
+    > print(lattice_paths(2, 2))
     6
 
     Notes
