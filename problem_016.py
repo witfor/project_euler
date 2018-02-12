@@ -1,4 +1,4 @@
-def sumNumberDigits(number):
+def sumDigits(number):
     """Returns the sum of a number's digits."""
 
     string_number = str(number)
@@ -8,4 +8,4 @@ def sumNumberDigits(number):
     return answer
 
 if __name__ == "__main__":
-    print(sumNumberDigits(2**1000))
+    print(sumDigits(2**1000))
