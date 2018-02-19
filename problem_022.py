@@ -4,20 +4,11 @@ def alphabetical_value(word):
     COLIN, colin = 3 + 15 + 12 + 9 + 14 = 53
     """
 
-    answer = 0
-    for letter in word:
-        if 65 <= ord(letter) <= 90:     #if uppercase letter
-            answer += ord(letter) - 64
-        elif 97 <= ord(letter) <= 122:  #if lowercase letter
-            answer += ord(letter) - 96
-    return answer
+    return sum([ord(letter.lower()) - 96 for letter in word])
 
 if __name__ == "__main__":
-    f = open('problem_022_names.txt')
-    f_content = f.read()
+    with open('problem_022_names.txt') as f:
+        f_content = f.read()
     name_list = f_content.replace('"', '').split(',')
     name_list.sort()
-    total = 0
-    for i in range(len(name_list)):
-        total += (i + 1) * alphabetical_value(name_list[i])
-    print(total)
+    print(sum([(i + 1) * alphabetical_value(name) for i, name in enumerate(name_list)]))
